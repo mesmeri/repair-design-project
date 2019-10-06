@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-font;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  &-centered {
+    width: 86%;
+    margin: 0 7%;
+
+    background-color: aqua;
+  }
+  &-left {
+    margin-right: 7%;
+    margin-left: 0;
+
+    background-color: purple;
+  }
+  &-right {
+    margin-right: 0;
+    margin-left: 7%;
+
+    background-color: pink;
+    .first-screen & {
+      width: 94.3%;
+      margin-left: 5.7%;
+    }
+  }
+}
+
+/* Temporary styles */
+
+.first-screen {
+  background-color: #131313;
+  .wrapper-right {
+    background-color: #6e4a2e;
+  }
+}
+
+.portfolio {
+  background-color: #131313;
+  .wrapper-right {
+    background-color: #473527;
+  }
+}
+
+.broadcast {
+  .wrapper-centered {
+    background-color: #fff1e6;
+  }
+}
+
+.repair-types {
+  .wrapper-centered {
+    background-color: #d6c7ba;
+  }
+}
+
+.call-measurer {
+  .wrapper-left {
+    background-color: #b39c88;
+  }
+}
+
+.gallery {
+  background-color: #2b2927;
+  .wrapper-centered {
+    background-color: #61564c;
+  }
+}
+
+.projects {
+  .wrapper-centered {
+    background-color: #cc7e37;
+  }
+}
+
+.measurement {
+  background-color: #1f1c1a;
+  .wrapper-centered {
+    background-color: #8f8c8b;
+  }
+}
+
+.team {
+  background-color: #8f7272;
+  .wrapper-centered {
+    background-color: #8f8c8b;
+  }
+}
+
+.reviews {
+  background-color: #c9b1b1;
+  .wrapper-centered {
+    background-color: #8f8c8b;
+  }
+}
+
+.questions {
+  background-color: #786767;
+  .wrapper-centered {
+    min-height: 400px;
+
+    background-color: #8f8c8b;
+  }
+}
+
+.contacts {
+  background-color: #2e2d2d;
+  .wrapper-centered {
+    min-height: 400px;
+
+    background-color: #8f8c8b;
+  }
+}
+
+.footer {
+  background-color: #0a0909;
+  .wrapper-centered {
+    min-height: 200px;
+
+    background-color: #8f8c8b;
+  }
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+ul,
+p {
+  margin: 0;
+}
+

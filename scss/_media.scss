@@ -1,0 +1,18 @@
+@media screen and (max-width: 375px) {
+  .wrapper {
+    &-left,
+    &-centered,
+    &-right {
+      width: 100%;
+      margin: 0;
+      padding: 0 18px;
+      .first-screen & {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  .reviews {
+    display: none;
+  }
+}
