@@ -1,7 +1,5 @@
-.some {
-	color: green;
-}
+@import "fonts";
+@import "variables";
+@import "normalize";
+@import "base";
 
-body {
-	background-color: red;
-}

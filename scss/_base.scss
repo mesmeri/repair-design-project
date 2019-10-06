@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: $text-font;
+}
+
+.common-container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	&-centered {
+		width: 86%;
+		margin: 0 7%;
+		background-color: aqua;
+	}
+	&-left {
+		margin-left: 0;
+		margin-right: 7%;
+		background-color: purple;
+
+	}
+	&-right {
+		margin-left: 7%;
+		margin-right: 0;
+		background-color: pink;
+		.first-screen & {
+			margin-left: 5.7%;
+			width: 94.3%;
+		}
+	}
+}
