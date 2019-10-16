@@ -1,0 +1,50 @@
+.offer {
+	background: $dark-bg-color url('../assets/images/bgs/offer-bg.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+	padding-left: 60px;
+	@include flex (flex-start, center);
+	min-height: 500px;
+	height: calc(100vh - 140px);
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		z-index: 0;
+		@include absolute;
+	}
+	&-inner {
+		z-index: 1;
+		position: relative;
+	}
+	.btn {
+		&--cta {
+		margin-right: 20px;
+		padding: 18px 42px;	
+
+		}
+	&--transparent {
+		padding: 17px 22px;
+		}
+	}
+}
+.page_title {
+	font-family: $title-font;
+	font-size: 40px;
+	letter-spacing: 0.06em;
+	max-width: 600px;
+	line-height: 1.32;
+	text-transform: uppercase;
+
+	color: $light-text-color;
+}
+
+.offer-text {
+	color: $light-text-color;
+	max-width: 450px;
+	font-size: 22px;
+	line-height: 1.36;
+	margin-bottom: 35px;
+}

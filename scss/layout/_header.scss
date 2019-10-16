@@ -13,7 +13,7 @@
   @include flex (space-between, center);
 
   list-style: none;
-  a {
+  &-link {
     margin: 5px;
     padding: 5px 13px;
 
@@ -23,7 +23,7 @@
 
     transition: color 0.3s ease;
     &:hover,
-    &:active {
+    &--active {
       color: $accent-color;
     }
   }
@@ -32,6 +32,9 @@
 
 .tel_link {
   color: $accent-color;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-color;
+  font-family: $accent-font;
   &:hover {
     color: darken($accent-color, 5%);
   }
