@@ -1,15 +1,17 @@
+
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   font-family: $text-font;
+  color: $dark-text-color;
 }
 
 h2,
@@ -33,29 +35,54 @@ h3 {
   &-left {
     margin-right: 7%;
     margin-left: 0;
-
-    background-color: purple;
   }
   &-right {
     margin-right: 0;
     margin-left: 7%;
 
-    background-color: pink;
     .first-screen & {
       width: 94.3%;
       margin-left: 5.7%;
     }
   }
 }
+.logo {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $accent-color;
+  font-family: $accent-font;
+  text-transform: uppercase;
+}
 
-/* Temporary styles */
+.btn {
+  font-size: 13px;
+  line-height: 1;
+  color: $light-text-color;
+  text-transform: uppercase;
+  padding: 12px 33px;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  font-family: $accent-font;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: transparent;
+    &--cta {
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+      background-color: $accent-color;
+      border: none;
+      padding: 13px 33px;
 
-.first-screen {
-  background-color: #131313;
-  .wrapper-right {
-    background-color: #6e4a2e;
+  }
+    &:hover {
+      background-color: darken($accent-color, 5%);
+    }
+    &:active {
+      outline: 2px solid darken($accent-color, 15%);
   }
 }
+
+/* Temporary styles */
 
 .portfolio {
   background-color: #131313;
