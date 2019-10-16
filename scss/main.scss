@@ -1,10 +1,11 @@
-@import "fonts";
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "base";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/fonts";
+@import "base/normalize";
+@import "base/base";
 @import "components/logo";
 @import "components/buttons";
-@import "first-screen";
+@import "layout/header";
+@import "sections/first-screen";
 
-@import "media";
+@import "base/media";

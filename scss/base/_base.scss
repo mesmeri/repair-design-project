@@ -19,7 +19,7 @@ h3 {
   margin-top: 0;
 }
 
-.visually-hidden {
+.visually_hidden {
   position: absolute;
 
   width: 1px;
@@ -36,21 +36,21 @@ h3 {
 }
 
 .wrapper {
-  &-centered {
+  &--centered {
     width: 86%;
     margin: 0 7%;
 
     background-color: aqua;
   }
-  &-left {
+  &--left {
     margin-right: 7%;
     margin-left: 0;
   }
-  &-right {
+  &--right {
     margin-right: 0;
     margin-left: 7%;
 
-    .first-screen & {
+    .first_screen & {
       width: 94.3%;
       margin-left: 5.7%;
     }

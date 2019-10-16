@@ -9,7 +9,7 @@
   color: $light-text-color;
 }
 
-.main-navigation {
+.main_navigation {
   @include flex (space-between, center);
 
   list-style: none;
@@ -30,7 +30,7 @@
 }
 
 
-.tel-link {
+.tel_link {
   color: $accent-color;
   &:hover {
     color: darken($accent-color, 5%);
