@@ -1,0 +1,38 @@
+.header {
+  @include flex (space-between, center);
+
+  min-height: 90px;
+  margin-right: 100px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  color: $light-text-color;
+}
+
+.main-navigation {
+  @include flex (space-between, center);
+
+  list-style: none;
+  a {
+    margin: 5px;
+    padding: 5px 13px;
+
+    color: $light-text-color;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+    &:hover,
+    &:active {
+      color: $accent-color;
+    }
+  }
+}
+
+
+.tel-link {
+  color: $accent-color;
+  &:hover {
+    color: darken($accent-color, 5%);
+  }
+}

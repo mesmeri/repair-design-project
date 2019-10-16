@@ -19,6 +19,16 @@ h3 {
   margin-top: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -46,41 +56,7 @@ h3 {
     }
   }
 }
-.logo {
-  font-size: 14px;
-  line-height: 1.14;
-  color: $accent-color;
-  font-family: $accent-font;
-  text-transform: uppercase;
-}
 
-.btn {
-  font-size: 13px;
-  line-height: 1;
-  color: $light-text-color;
-  text-transform: uppercase;
-  padding: 12px 33px;
-  border-radius: 2px;
-  text-align: center;
-  border: 1px solid #ffffff;
-  font-family: $accent-font;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  background: transparent;
-    &--cta {
-      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-      background-color: $accent-color;
-      border: none;
-      padding: 13px 33px;
-
-  }
-    &:hover {
-      background-color: darken($accent-color, 5%);
-    }
-    &:active {
-      outline: 2px solid darken($accent-color, 15%);
-  }
-}
 
 /* Temporary styles */
 
