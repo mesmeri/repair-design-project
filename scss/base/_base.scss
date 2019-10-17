@@ -19,6 +19,21 @@ h3 {
   margin-top: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  &:focus,
+  &:active {
+    outline: 2px solid darken($accent-color, 45%);
+  }
+}
+
 .visually_hidden {
   position: absolute;
 
@@ -55,6 +70,25 @@ h3 {
       margin-left: 5.7%;
     }
   }
+}
+
+.section_title,
+.colorized_title {
+  font-family: $title-font;
+}
+
+.section-_title {
+  font-size: 20px;
+  line-height: 1.4;
+  color: $dark-text-color;
+  text-transform: uppercase;
+}
+
+.colorized_title {
+  color: $accent-color;
+  font-size: 27px;
+  line-height: 1.37;
+  text-transform: uppercase;
 }
 
 .accent {

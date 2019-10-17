@@ -1,0 +1,43 @@
+.circle_controls {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px rgba($accent-color, 0.5);
+	background-color: $accent-color;
+	border: 0;
+	cursor: pointer;
+	&:focus {
+		outline: 1px solid darken($accent-color, 45%);
+	}
+	@include flex-center;
+	&::after {
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-left: 2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
+	&--prev {
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+	&--next {
+		&::after {
+			transform: rotate(225deg);
+		}
+	}
+	&--disabled {
+		display: none;
+	}
+	.photo_slider & {
+		position: absolute;
+		top: 50%;
+		&--prev {
+			left: 35px;
+		}
+		&--next {
+			right: 35px;
+		}
+	}
+}
