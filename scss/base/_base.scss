@@ -86,6 +86,14 @@ input:focus {
   color: $dark-text-color;
   text-transform: uppercase;
   text-align: center;
+  &--img {
+    &::after {
+      width: 114px;
+      height: 28px;
+      display: block;
+      margin: 13px auto 31px;
+    }
+  }
 }
 
 .colorized_title {
@@ -110,12 +118,6 @@ input:focus {
 /* Temporary styles */
 
 
-
-.repair-types {
-  .wrapper-centered {
-    background-color: #d6c7ba;
-  }
-}
 
 .call-measurer {
   .wrapper-left {

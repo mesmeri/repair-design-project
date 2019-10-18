@@ -5,10 +5,6 @@
 		color: $light-text-color;
 		&::after {
 			content: url("../assets/images/svg/camera.svg");
-			width: 114px;
-			height: 28px;
-			display: block;
-			margin: 13px auto 31px;
 		}
 	}
 	&-about {
