@@ -6,11 +6,16 @@
 	background-color: $accent-color;
 	border: 0;
 	cursor: pointer;
+	transition: all 0.3s ease;
 	&:focus {
-		outline: 1px solid darken($accent-color, 45%);
+		outline: 1px solid darken($accent-color, 35%);
+	}
+	&:hover {
+		background-color: darken($accent-color, 5%)
 	}
 	@include flex-center;
-	&::after {
+	&--prev::after,
+	&--next::after {
 		content: "";
 		width: 10px;
 		height: 10px;
@@ -29,6 +34,20 @@
 	}
 	&--disabled {
 		display: none;
+	}
+	&--play {
+		width: 85px;
+		height: 85px;
+		background-image: url("../assets/images/svg/play-triangle.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		.video_wrapper & {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
 	}
 	.photo_slider & {
 		position: absolute;
