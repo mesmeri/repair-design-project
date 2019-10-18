@@ -1,0 +1,84 @@
+.form {
+	label {
+		font-size: 15px;
+		line-height: 1.33;
+		color: rgba($form-text-color, 0.5);
+	}
+	&-input {
+		&::-webkit-input-placeholder {
+			font-size: 18px;
+			color: $form-text-color;
+		}
+		display: block;
+		border: 0;
+		line-height: 1.33;
+		border-bottom: 1px solid rgba($form-text-color, 0.3);
+		width: 230px;
+	}
+	&-submit {
+		min-width: 200px;
+		&:focus {
+			border: 0;
+		}
+	}
+	&-agreement {
+		.form-label {
+			color: $form-text-color;
+			position: relative;
+			font-size: 16px;
+			line-height: 1.38;
+			&::before {
+				content: "";
+				position: absolute;
+				left: -27px;
+				top: 0;
+				width: 18px;
+				height: 18px;
+				border-radius: 2px;
+				background-color: transparent;
+				border: 2px solid $accent-color;
+				}
+			&:after {
+				content: "";
+				width: 10px;
+				height: 5px;
+				border-left: 2px solid #ffffff;
+				border-bottom: 2px solid #ffffff;
+				transform: rotate(-45deg);
+				position: absolute;
+				left: -22px;
+				top: 5px;
+				display: none;
+			}
+			&:focus {
+				outline: 1px solid darken($accent-color, 35%);
+			}
+		}
+		.form-checkbox {
+			display: none;
+			&:checked ~ .form-label {
+				&::before {
+					background-color: $accent-color;
+				}
+				&::after {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.broadcast_form {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	.input-wrapper {
+		margin-right: 58px;
+	}
+	&-agreement {
+		flex-basis: 100%;
+		text-align: center;
+		margin-top: 35px;
+	}
+	margin-bottom: 75px;
+}
