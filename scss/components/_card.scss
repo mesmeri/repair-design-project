@@ -1,0 +1,45 @@
+.card {
+	flex-basis: calc((100% - 60px) / 3);
+	padding-bottom: 30px;
+	&-container {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-img {
+		position: relative;
+	}
+	&-points_wrapper {
+		position: relative;
+		z-index: 1;
+		background: #ffffff;
+		margin: -127px 31px 0;	
+		padding: 25px 34px 49px;
+		position: relative;
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	}
+	&-data {
+		background-color: $accent-color;
+		color: $light-text-color;
+		padding: 17px 33px;
+		text-transform: uppercase;
+		display: inline-block;
+		position: absolute;
+		bottom: -27px;
+		left: 0;
+		box-shadow: 5px 5px 10px rgba($accent-color, 0.3);
+	}
+	&-title {
+		font-size: 18px;
+		line-height: 1.39;
+		font-family: $title-font;
+		margin-bottom: 10px;
+	}
+	&-point {
+		margin-left: 20px;
+		list-style-type: disc;
+		font-size: 15px;
+		line-height: 1.67;
+		color: #959595;
+	}
+}
