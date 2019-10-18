@@ -164,25 +164,33 @@
 		<section class="broadcast" id="broadcast">
 			<div class="container">
 				<div class="wrapper--centered">
+
 					<h2 class="section_title">
 						Online control
 					</h2>
-					<video src=""></video>
-					<p class="control-about">
+					<div class="video_wrapper">
+						<iframe width="817" height="434" src="https://www.youtube.com/embed/3cj1T4wtFKI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<button class="circle_controls circle_controls--play"></button>						
+					</div>
+					<p class="broadcast-about">
 						At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
 					</p>
-					<form class="broadcast-form" action="">
-						<label>Name
-							<input class="form-input broadcast-form__name" type="text" name="broadcast-name">
-						</label>
-						<label>Phone
-							<input class="form-input broadcast-form__tel" type="tel" name="broadcast-tel">
-						</label>
-						<input class="form-submit broadcast-form__submit" type="submit" value="submit">
-						<label>I agree to the processing of personal data
-							<input class="form-checkbox broadcast-form__agreement" type="checkbox" name="broadcast-agreement">
-						</label>
+					<form class="form broadcast_form" action="">
+						<div class="input-wrapper">
+							<label for="broadcast-name">Name</label>
+							<input class="form-input broadcast_form-name" id="broadcast-name" name="broadcast-name" type="text" placeholder="What is your name:">
+						</div>
+						<div class="input-wrapper">
+							<label for="broadcast-tel">Phone</label>
+							<input class="form-input broadcast_form-tel" id="broadcast-tel" name="broadcast-tel" type="tel" placeholder="Your phone number:">
+						</div>
+						<input class="form-submit broadcast_form-submit btn btn--cta" type="submit" value="submit">
+						<div class="form-agreement broadcast_form-agreement">
+							<input class="form-checkbox" id="checkbox-agreement" name="broadcast-agreement" type="checkbox">
+							<label class="form-label" for="checkbox-agreement" tabindex="0">I agree to the processing of personal data</label>
+						</div>
 					</form>
+
 				</div>
 			</div>
 		</section>
