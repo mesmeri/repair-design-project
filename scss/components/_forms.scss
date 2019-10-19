@@ -22,6 +22,7 @@
 		}
 	}
 	&-agreement {
+		padding-left: 30px;
 		.form-label {
 			color: $form-text-color;
 			position: relative;
@@ -81,4 +82,34 @@
 		margin-top: 35px;
 	}
 	margin-bottom: 75px;
+}
+
+.request_form {
+	label {
+		color: rgba($light-text-color, 0.5);
+	}
+	.form-input {
+		background-color: transparent;
+		padding: 7px 0;
+		border-bottom-color: rgba(255, 255, 255, 0.15);
+		margin-bottom: 45px;
+		width: 100%;
+		color: $light-text-color;
+		&::-webkit-input-placeholder {
+			color: $light-text-color;
+		}
+	}
+	&-agreement {
+		margin-bottom: 35px;
+		.form-label {
+			color: $light-text-color;
+		}
+	}
+	&-email {
+		margin-bottom: 13px;
+	}
+	&-submit {
+		margin-left: auto;
+		display: block;
+	}
 }
