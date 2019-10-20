@@ -1,0 +1,14 @@
+.projects {
+	background-image: linear-gradient(to top, $dark-bg-color 470px, #fff 350px, #fff 100%);
+	.section_title--img {
+		&::after {
+		content: url("../assets/images/svg/projects.svg");	
+		}
+	}
+	.text {
+		margin-bottom: 45px;
+	}
+	.plan-item:last-child {
+		padding-bottom: 0;
+	}
+}
