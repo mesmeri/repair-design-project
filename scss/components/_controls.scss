@@ -10,10 +10,13 @@
 		border-radius: 50%;
 		background-color: rgba($light-text-color, 0.3);
 		display: inline-block;
-		margin: 0 9px;
+		margin-right: 9px;
 		transition: all 0.2s ease;
 		&--active {
 			background: #ffffff;
+		}
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 	&-arrow {
@@ -71,6 +74,6 @@
 
 .steps {
 	.controls {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 }
