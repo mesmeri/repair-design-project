@@ -102,6 +102,19 @@ input:focus {
   font-size: 27px;
   line-height: 1.37;
   text-transform: uppercase;
+  position: relative;
+    &--line {
+      position: relative;
+      &::after {
+        content: "";
+        width: 92px;
+        height: 1px;
+        position: absolute;
+        bottom: 19px;
+        right: -8px;
+        background-color: $accent-color;
+      }
+    }
 }
 
 .accent {

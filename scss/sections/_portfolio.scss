@@ -8,16 +8,6 @@
 	}
 	.colorized_title {
 		max-width: 255px;
-		position: relative;
-		&::after {
-			content: "";
-			width: 92px;
-			height: 1px;
-			position: absolute;
-			bottom: 19px;
-			right: -8px;
-			background-color: $accent-color;
-		}
 	}
 	&_txt {
 		font-size: 18px;
