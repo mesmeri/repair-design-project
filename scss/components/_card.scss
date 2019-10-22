@@ -21,6 +21,7 @@
 	&-data {
 		background-color: $accent-color;
 		color: $light-text-color;
+		font-family: $title-font;
 		padding: 17px 33px;
 		text-transform: uppercase;
 		display: inline-block;
@@ -41,5 +42,23 @@
 		font-size: 15px;
 		line-height: 1.67;
 		color: #959595;
+	}
+}
+
+.team {
+	.card {
+		padding: 35px;
+		color: $dark-text-color;
+		&-points_wrapper {
+			text-align: center;
+			margin-top: -85px;
+		}
+		&-data {
+			color: $light-text-color;
+			padding: 13px;
+			text-align: center;
+			width: 100%;
+			bottom: -15px;
+		}
 	}
 }
