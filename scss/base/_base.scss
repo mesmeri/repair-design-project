@@ -40,6 +40,16 @@ input:focus {
   border-bottom: 2px solid darken($accent-color, 35%);
 }
 
+h2,
+h3 {
+  margin-top: 0;
+}
+
+ul,
+p {
+  margin: 0;
+}
+
 .visually_hidden {
   position: absolute;
 
@@ -129,7 +139,6 @@ input:focus {
   position: relative;
 }
 
-/* Temporary styles */
 .text {
     font-size: 20px;
     line-height: 1.35;
@@ -137,13 +146,8 @@ input:focus {
     max-width: 680px;
     margin: 0 auto;
 }
+/* Temporary styles */
 
-.reviews {
-  background-color: #c9b1b1;
-  .wrapper-centered {
-    background-color: #8f8c8b;
-  }
-}
 
 .questions {
   background-color: #786767;
@@ -170,15 +174,5 @@ input:focus {
 
     background-color: #8f8c8b;
   }
-}
-
-h2,
-h3 {
-  margin-top: 0;
-}
-
-ul,
-p {
-  margin: 0;
 }
 
