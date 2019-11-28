@@ -1,8 +1,10 @@
 .contacts {
-	background-image: linear-gradient(to bottom, #ffffff 225px, rgba(24, 24, 24, 0.72) 225px, rgba(24, 24, 24, 0.72) 100%),
+	background-image: linear-gradient(to bottom, #ffffff 225px, rgba($dark-bg-color, 0.99) 225px, rgba($dark-bg-color, 0.82) 100%),
 					  url('../assets/images/bgs/contacts-bg.jpg');
 	background-repeat: no-repeat;
-	min-height: 80vh;
+	background-position: 0 0, 0 225px;
+	background-size: contain;
+	padding-bottom: 65px;
 }
 .questions {
 	width: 90%;
@@ -10,6 +12,7 @@
 	margin: 0 auto;
 	padding: 35px;
 	background-color: $dark-bg-color;
+	margin-bottom: 50px;
 	&-title {
 		color: $light-text-color;
 		text-align: center;
@@ -18,5 +21,34 @@
 		line-height: 1.4;
 		font-family: $title-font;
 		margin-bottom: 45px;
+	}
+}
+.address {
+	font-family: $title-font;
+	font-size: 20px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+	color: $accent-color;
+	max-width: 580px;
+	font-style: normal;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	&-links {
+		display: block;
+		margin: 25px auto 0;
+	}
+	&-link {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 0 7px;
+		&--mail {
+			background: $accent-color url('../assets/images/svg/envelop.svg') no-repeat center;
+		}
+		&--instagram {
+			background: $accent-color url('../assets/images/svg/insta.svg') no-repeat center;
+		}
 	}
 }
