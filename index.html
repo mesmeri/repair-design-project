@@ -168,26 +168,26 @@
 					<h2 class="section_title section_title--img">
 						Online control
 					</h2>
-					<div class="video_wrapper">
+<!-- 					<div class="video_wrapper">
 						<iframe width="817" height="434" src="https://www.youtube.com/embed/3cj1T4wtFKI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<button class="circle_controls circle_controls--play"></button>						
-					</div>
+					</div> -->
 					<p class="text">
 						At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
 					</p>
-					<form class="form broadcast_form" action="">
-						<div class="input-wrapper">
-							<label for="broadcast-name">Name</label>
+					<form class="broadcast_form form" action="">
+						<div class="input_wrapper">
+							<label class="label" for="broadcast-name">Name</label>
 							<input class="form-input broadcast_form-name" id="broadcast-name" name="broadcast-name" type="text" placeholder="What is your name:">
 						</div>
-						<div class="input-wrapper">
-							<label for="broadcast-tel">Phone</label>
+						<div class="input_wrapper">
+							<label class="label" for="broadcast-tel">Phone</label>
 							<input class="form-input broadcast_form-tel" id="broadcast-tel" name="broadcast-tel" type="tel" placeholder="Your phone number:">
 						</div>
 						<input class="form-submit broadcast_form-submit btn btn--cta" type="submit" value="submit">
 						<div class="form-agreement broadcast_form-agreement">
-							<input class="form-checkbox" id="checkbox-agreement" name="broadcast-agreement" type="checkbox">
-							<label class="form-label" for="checkbox-agreement" tabindex="0">I agree to the processing of personal data</label>
+							<input class="form-checkbox" id="broadcast-agreement" name="broadcast-agreement" type="checkbox" checked>
+							<label class="label agreement-label" for="broadcast-agreement">I agree to the processing of personal data</label>
 						</div>
 					</form>
 
@@ -300,22 +300,22 @@
 								Leave a request for free
 								departure of the measurer
 							</h3>
-							<form class="request_form" action="">
-								<div class="input-wrapper">
-									<label for="request-name">Name</label>
+							<form class="request_form form--dark" action="">
+								<div class="input_wrapper">
+									<label class="label" for="request-name">Name</label>
 									<input class="form-input request_form-name" id="request-name" name="request-name" type="text" placeholder="What is your name:">
 								</div>
-								<div class="input-wrapper">
-									<label for="request-tel">Phone</label>
+								<div class="input_wrapper">
+									<label class="label" for="request-tel">Phone</label>
 									<input class="form-input request_form-tel" id="request-tel" name="request-tel" type="tel" placeholder="Your phone number:">
 								</div>
-								<div class="input-wrapper">
-									<label for="request-email">Email</label>
+								<div class="input_wrapper">
+									<label class="label" for="request-email">Email</label>
 									<input class="form-input request_form-email" id="request-email" name="request-email" type="email" placeholder="Your email:">
 								</div>
 								<div class="form-agreement request_form-agreement">
-									<input class="form-checkbox" id="checkbox-agreement" name="request-agreement" type="checkbox">
-									<label class="form-label" for="checkbox-agreement" tabindex="0">I agree to the processing of personal data</label>
+									<input class="form-checkbox" id="request-agreement" name="request-agreement" type="checkbox" checked>
+									<label class="label agreement-label" for="request-agreement">I agree to the processing of personal data</label>
 								</div>
 								<input class="form-submit request_form-submit btn btn--cta" type="submit" value="CALL THE MEASURER">
 							</form>
@@ -684,23 +684,27 @@
 				<div class="wrapper--centered">
 
 					<div class="questions">
-						<h3>
+						<h3 class="questions-title">
 							Have any questions?
 						</h3>
-						<form action="" class="questions_form form">
-							<label>Name
+						<form action="" class="questions_form form form--dark">
+							<div class="input_wrapper input_wrapper--name">
+								<label class="label" for="questions-name">Name</label>
 								<input class="form-input questions_form-name" type="text" name="questions-name" placeholder="What is your name:">
-							</label>
-							<label>Phone
-								<input class="form-input questions_form-tel" type="tel" name="questions-tel" placeholder="Your phone number:">
-							</label>
-							<label>Question
-								<input class="form-input questions_form-question" type="text" name="questions-question" placeholder="I want to know:">
-							</label>
-							<label>I agree to the processing of personal data
-								<input class="form-checkbox question_form-agreement" type="checkbox" name="questions-agreement">
-							</label>
-							<input class="form-submit questions_form-submit" type="submit" value="submit">
+							</div>
+							<div class="input_wrapper input_wrapper--tel">
+								<label class="label" for="questions-tel">Phone</label>
+								<input class="form-input questions_form-tel" type="tel" name="questions-tel" placeholder="Your phone number:">					
+							</div>
+							<div class="input_wrapper input_wrapper--question">
+								<label class="label" for="questions-question">Question</label>
+								<input class="form-input questions_form-question" type="text" name="questions-question" placeholder="I want to know:">	
+							</div>
+							<div class="form-agreement">
+								<input class="form-checkbox" id="questions-agreement" type="checkbox" name="questions-agreement" checked>			
+								<label class="label agreement-label" for="questions-agreement">I agree to the processing of personal data</label>
+							</div>
+							<input class="form-submit questions_form-submit btn btn--cta" type="submit" value="submit">
 						</form>
 					</div>
 

@@ -1,19 +1,20 @@
 .form {
-	label {
-		font-size: 15px;
-		line-height: 1.33;
-		color: rgba($form-text-color, 0.5);
-	}
 	&-input {
-		&::-webkit-input-placeholder {
-			font-size: 18px;
-			color: $form-text-color;
-		}
+		background-color: transparent;
+		padding: 7px 0;
 		display: block;
 		border: 0;
 		line-height: 1.33;
 		border-bottom: 1px solid rgba($form-text-color, 0.3);
 		width: 230px;
+		&::-webkit-input-placeholder {
+			font-size: 18px;
+			color: $form-text-color;
+		}
+		&:focus {
+	  		outline: none;
+	  		border-bottom: 1px solid darken($accent-color, 35%);
+		}
 	}
 	&-submit {
 		min-width: 200px;
@@ -23,49 +24,72 @@
 	}
 	&-agreement {
 		padding-left: 30px;
-		.form-label {
-			color: $form-text-color;
-			position: relative;
-			font-size: 16px;
-			line-height: 1.38;
+	}
+	&-checkbox {
+		display: none;
+		&:checked ~ .agreement-label {
 			&::before {
-				content: "";
-				position: absolute;
-				left: -27px;
-				top: 0;
-				width: 18px;
-				height: 18px;
-				border-radius: 2px;
-				background-color: transparent;
-				border: 2px solid $accent-color;
-				}
-			&:after {
-				content: "";
-				width: 10px;
-				height: 5px;
-				border-left: 2px solid #ffffff;
-				border-bottom: 2px solid #ffffff;
-				transform: rotate(-45deg);
-				position: absolute;
-				left: -22px;
-				top: 5px;
-				display: none;
+				background-color: $accent-color;
 			}
-			&:focus {
-				outline: 1px solid darken($accent-color, 35%);
+			&::after {
+				display: block;
 			}
 		}
-		.form-checkbox {
-			display: none;
-			&:checked ~ .form-label {
-				&::before {
-					background-color: $accent-color;
-				}
-				&::after {
-					display: block;
+	}
+	&--dark {
+		.form-input:focus {
+			border-bottom: 1px solid lighten($accent-color, 10%);
+		} 
+		.label {
+			color: rgba($light-text-color, 0.5);
+		}
+		.agreement-label {
+			color: $light-text-color;
+		}
+		.form {
+			&-input {
+				border-bottom-color: rgba(255, 255, 255, 0.15);
+				color: $light-text-color;
+				&::-webkit-input-placeholder {
+					color: $light-text-color;
 				}
 			}
 		}
+	}
+}
+
+.label {
+	font-size: 15px;
+	line-height: 1.33;
+	color: rgba($form-text-color, 0.5);
+}
+
+.agreement-label {
+	position: relative;
+	font-size: 16px;
+	line-height: 1.38;
+	&::before {
+		content: "";
+		position: absolute;
+		left: -27px;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		border-radius: 2px;
+		background-color: transparent;
+		border: 2px solid $accent-color;
+		}
+	&:after {
+		content: "";
+		width: 10px;
+		height: 5px;
+		border-left: 2px solid #ffffff;
+		border-bottom: 2px solid #ffffff;
+		transform: rotate(-45deg);
+		position: absolute;
+		left: -22px;
+		top: 5px;
+		display: none;
 	}
 }
 
@@ -73,7 +97,7 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	.input-wrapper {
+	.input_wrapper {
 		margin-right: 58px;
 	}
 	&-agreement {
@@ -85,25 +109,12 @@
 }
 
 .request_form {
-	label {
-		color: rgba($light-text-color, 0.5);
-	}
 	.form-input {
-		background-color: transparent;
-		padding: 7px 0;
-		border-bottom-color: rgba(255, 255, 255, 0.15);
 		margin-bottom: 45px;
 		width: 100%;
-		color: $light-text-color;
-		&::-webkit-input-placeholder {
-			color: $light-text-color;
-		}
 	}
 	&-agreement {
 		margin-bottom: 35px;
-		.form-label {
-			color: $light-text-color;
-		}
 	}
 	&-email {
 		margin-bottom: 13px;
@@ -111,5 +122,33 @@
 	&-submit {
 		margin-left: auto;
 		display: block;
+	}
+}
+
+.questions_form {
+	width: 100%;
+	max-width: 520px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.input_wrapper {
+		margin-bottom: 45px;
+	}
+	.input_wrapper--name,
+	.input_wrapper--tel {
+		width: 45%;
+	}
+	&-question,
+	.input_wrapper--question {
+		width: 100%;
+	}
+	.form-agreement {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	&-submit {
+		margin: 0 auto;
 	}
 }

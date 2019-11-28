@@ -1,0 +1,22 @@
+.contacts {
+	background-image: linear-gradient(to bottom, #ffffff 225px, rgba(24, 24, 24, 0.72) 225px, rgba(24, 24, 24, 0.72) 100%),
+					  url('../assets/images/bgs/contacts-bg.jpg');
+	background-repeat: no-repeat;
+	min-height: 80vh;
+}
+.questions {
+	width: 90%;
+	max-width: 880px;
+	margin: 0 auto;
+	padding: 35px;
+	background-color: $dark-bg-color;
+	&-title {
+		color: $light-text-color;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 1.4;
+		font-family: $title-font;
+		margin-bottom: 45px;
+	}
+}
