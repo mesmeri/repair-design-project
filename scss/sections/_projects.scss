@@ -7,8 +7,13 @@
 	}
 	.text {
 		margin-bottom: 45px;
+	}	
+}
+.plan {
+	&-list {
+		align-items: flex-start;
 	}
-	.plan-item:last-child {
+	&-item:last-child {
 		padding-bottom: 0;
 	}
 }

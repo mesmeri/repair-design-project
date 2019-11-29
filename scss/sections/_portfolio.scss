@@ -77,9 +77,11 @@
 		text-transform: uppercase;
 		margin-bottom: 45px;
 		display: inline-block;
+		cursor: pointer;
 		&:last-child {
 			margin-right: 0;
 		}
+		&:hover,
 		&--active {
 			color: $accent-color;
 			border-bottom: 1px solid $accent-color;

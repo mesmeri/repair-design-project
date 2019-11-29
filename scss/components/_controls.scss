@@ -12,6 +12,8 @@
 		display: inline-block;
 		margin-right: 9px;
 		transition: all 0.2s ease;
+		cursor: pointer;
+		&:hover,
 		&--active {
 			background: #ffffff;
 		}
@@ -38,7 +40,6 @@
 			background-color: #ffffff;
 			vertical-align: middle;
 			line-height: 12px;
-
 		}
 		&::after {
 			content: "";

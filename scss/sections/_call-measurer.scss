@@ -75,8 +75,10 @@
 		font-family: $scheme-font;
 		position: absolute;
 		display: flex;
+		align-items: center;
 		max-width: 430px;
 		width: max-content;
+
 		&::before {
 			width: 42px;
 			height: 42px;

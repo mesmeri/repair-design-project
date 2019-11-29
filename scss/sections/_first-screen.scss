@@ -42,6 +42,7 @@
 		font-size: 14px;
 		padding-right: 43px;
 		position: relative;
+		transition: all 0.3s ease;
 		&::before,
 		&::after {
 			content: "";
@@ -65,5 +66,11 @@
 			height: 6px;
 			transform: rotate(-45deg);
 		}
+		&:hover {
+			color: $accent-color;
+			&::after {
+				transform: rotate(-45deg) translateY(10px);
+			}
+		} 
 	}
 }
