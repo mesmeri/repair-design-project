@@ -1,17 +1,69 @@
-@media screen and (max-width: 375px) {
-  .wrapper {
-    &-left,
-    &-centered,
-    &-right {
-      width: 100%;
-      margin: 0;
-      padding: 0 18px;
-      .first-screen & {
-        width: 100%;
-        margin: 0;
-      }
-    }
+@media screen and (max-width: 1250px) {
+  .nav,
+  .main_navigation {
+    display: none;
   }
+  .tel_link {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .instagram_link {
+    display: none;
+  }
+  .page_title {
+    font-size: 32px;
+  }
+  .offer-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tel_link {
+    color: $light-text-color;
+    border: 0;
+  }
+  .header-btn,
+  .scroll {
+    display: none;
+  }
+  .header,
+  .wrapper--centered,
+  .wrapper--left,
+  .wrapper--right {
+    width: 100%;
+    margin: 0;
+    padding: 0 18px;
+  }
+  .first_screen-wrapper{
+    padding: 0;
+  }
+  .offer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    min-height: 60px;
+  }
+  .page_title {
+    font-size: 23px;
+    width: 100%;
+  }
+  .offer .btn {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .reviews {
     display: none;
   }

@@ -25,15 +25,20 @@
 		padding: 18px 42px;	
 
 		}
-	&--transparent {
+		&--transparent {
 		padding: 17px 22px;
 		}
 	}
+	.accent {
+		white-space: nowrap;
+	}
+
 }
 .page_title {
 	font-family: $title-font;
 	font-size: 40px;
 	letter-spacing: 0.06em;
+	width: 85%;
 	max-width: 600px;
 	line-height: 1.32;
 	text-transform: uppercase;
@@ -43,8 +48,10 @@
 
 .offer-text {
 	color: $light-text-color;
+	width: 90%;
 	max-width: 450px;
 	font-size: 22px;
 	line-height: 1.36;
 	margin-bottom: 35px;
 }
+
