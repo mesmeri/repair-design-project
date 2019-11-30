@@ -1,6 +1,6 @@
 .broadcast {
-	padding-top: 45px;
 	background-image: linear-gradient(to bottom, $dark-bg-color 350px, #fff 350px, #fff 100%);
+	padding-bottom: 75px;
 	.section_title {
 		color: $light-text-color;
 		&::after {
@@ -10,24 +10,42 @@
 	.text {
 		line-height: 1.7;
 		margin-bottom: 80px;
+		padding-top: 30px;
+		position: relative;
+		&::before {
+			content: "";
+			width: 55px;
+			height: 2px;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 23px);
+			background-color: $accent-color;
+			display: block;
+			border-radius: 1px;
+		}
+	}
+	&-video {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
 	}
 }
 
 .video_wrapper {
-	width: max-content;
-	margin: 0 auto;
 	position: relative;
-	iframe {
-		display: block;
-	}
+	padding-bottom: 52%;
+	padding-top: 25px;
+	height:0;
+	margin: 0 auto 60px;
 	&::after {
 		content: "";
 		width: 100%;
 		height: 100%;
 		@include absolute;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.6);
 	}
 	box-shadow: 0 0 50px 10px rgba($dark-bg-color, 0.15);
-	margin-bottom: 90px;
 }
 

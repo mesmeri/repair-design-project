@@ -34,11 +34,62 @@
   .offer-text {
     font-size: 18px;
   }
+  .broadcast {
+    background-image: linear-gradient(to top, #fff 45px, $dark-bg-color 45px, $dark-bg-color 100%);
+    color: $light-text-color;
+    padding-bottom: 25px;
+    .text {
+      margin-bottom: 30px;
+    }
+    &_form {
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      .input_wrapper {
+        margin: 30px 0;
+      }
+      &-agreement {
+        margin: 0 0 30px;
+        text-align: left;
+        .label {
+          color: $light-text-color;
+        }
+      }
+      .label {
+        color: rgba($light-text-color, 0.5);
+      }
+      .form-input {
+        width: 100%;
+        border-bottom-color: rgba(255, 255, 255, 0.15);
+        color: $light-text-color;
+        &::-webkit-input-placeholder {
+          color: $light-text-color;
+        }
+        &:focus {
+          border-bottom: 1px solid lighten($accent-color, 10%);
+        }
+      }
+      .form-submit {
+        order: 4;
+      } 
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
   .section {
     padding: 27px 0;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .circle_controls {
+    width: 36px;
+    height: 36px;
+    &--play {
+      background-size: 13px 13px;
+    }
   }
   .colorized_title {
     &--line::after {
@@ -97,6 +148,9 @@
   }
   .info_slider {
     padding-right: 0;
+    .controls {
+      display: none;
+    }
   }
 }
 
