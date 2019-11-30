@@ -6,6 +6,18 @@
 	.wrapper--right {
 		display: flex;
 	}
+	&-inner {
+		display: grid;
+		grid-template-columns: 35% 32.5% 32.5%; 
+		grid-gap: 20px;
+		grid-template-areas: 
+		"about photo photo"
+		"info photo photo"
+	}
+	&-about {
+		grid-area: about;
+		padding-right: 30px;
+	}
 	.colorized_title {
 		max-width: 255px;
 	}
@@ -17,24 +29,22 @@
 }
 
 .info_slider {
+	padding-right: 30px;
+	grid-area: info;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	flex-basis: 34%;
-	flex-shrink: 0;
-	margin-right: 4%;
-	padding-top: 65px;
 	&-list {
-		list-style: none;
-		padding-top: 15px;
+	list-style: none;
+	padding-top: 15px;
 	}
 	&-project_info {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 40% 50%;
+		grid-template-rows: 1fr 1fr;
 		list-style: none;
 	}
 	&_block {
-		flex-basis: 45%;
 		margin-right: 5%;
 		margin-bottom: 37px;		
 	}
@@ -55,13 +65,15 @@
 
 .photo_slider {
 	position: relative;
+	grid-area: photo;
 	&-list {
-		display: flex;
-		list-style: none;
+	display: flex;
+	list-style: none;
 	}
 	&-item {
 		margin-right: 20px;
 		flex-shrink: 0;
+		width: 100%;
 		max-width: 680px;
 		&:last-child {
 			margin-right: 0;

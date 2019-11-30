@@ -6,9 +6,25 @@
   .tel_link {
     margin-left: auto;
   }
+  .portfolio {
+    &-inner {
+      grid-template-areas: 
+      "about about ."
+      "photo photo photo"
+      "info info .";
+    }
+  }
+  .photo_slider {
+    &-label {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .section {
+    padding: 35px 0;
+  }
   .instagram_link {
     display: none;
   }
@@ -21,6 +37,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  .section {
+    padding: 27px 0;
+  }
+  .colorized_title {
+    &--line::after {
+      display: none;
+    }
+  }
   .tel_link {
     color: $light-text-color;
     border: 0;
@@ -37,12 +61,42 @@
     margin: 0;
     padding: 0 18px;
   }
-  .first_screen-wrapper{
+  .first_screen {
+    &-wrapper {
     padding: 0;
+    }
+    .container {
+      padding-bottom: 0;
+    }
   }
   .offer {
     padding-left: 18px;
     padding-right: 18px;
+  }
+  .portfolio {
+    padding-top: 36px;
+    .colorized_title,
+    &_txt {
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+    &_txt {
+      max-width: 80%;
+    }
+    &-inner {
+      grid-column-gap: 0;
+      grid-row-gap: 30px;
+      grid-template-areas: 
+      "about about about"
+      "photo photo photo"
+      "info info info";
+    }
+    &-about {
+      padding-right: 0;
+    }
+  }
+  .info_slider {
+    padding-right: 0;
   }
 }
 
