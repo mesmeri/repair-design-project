@@ -54,6 +54,26 @@
   .styles-list {
     display: none;
   }
+  .measurement {
+    display: none;
+  }
+  .team {
+    background: $dark-bg-color;
+    &_list {
+      flex-direction: column;
+      align-items: center;
+      &-item {
+        width: 100%;
+        max-width: 650px;
+        margin-bottom: 50px;
+      }
+    }
+    &_about {
+      .text {
+        color: $light-text-color;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -128,6 +148,7 @@
   .projects {
     background: $dark-bg-color;
     color: $light-text-color;
+    padding-bottom: 25px;
     .section_title {
       color: $light-text-color;
     }
@@ -229,6 +250,11 @@
   .repair_types {
     padding-bottom: 25px;
     &-text {
+      display: none;
+    }
+  }
+  .team {
+    &_about {
       display: none;
     }
   }
