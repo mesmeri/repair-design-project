@@ -46,7 +46,7 @@
 
 .team {
 	.card {
-		padding: 35px;
+		padding: 35px 0 0 35px;
 		color: $dark-text-color;
 		&-points_wrapper {
 			text-align: center;
@@ -58,6 +58,7 @@
 			text-align: center;
 			width: 100%;
 			bottom: -15px;
+			font-size: 13px;
 		}
 	}
 }
