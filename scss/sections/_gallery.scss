@@ -8,10 +8,10 @@
 			background-size: cover;
 			width: 100%;
 			position: absolute;
-			top: 10%;
+			top: 15%;
 			left: 0;
 			right: 0;
-			bottom: 40px;
+			bottom: 10%;
 			filter: brightness(0.3);
 			z-index: -1;
 	}
@@ -38,6 +38,28 @@
 		&:first-child {
 			margin-bottom: 40px;
 		}
+	}
+	&-slider {
+		display: none;
+		overflow: hidden;
+		position: relative;
+		.circle_controls--prev,
+		.circle_controls--next {
+			position: absolute;
+			top: 50%;
+		}
+		.circle_controls--prev {
+			left: 0;
+			transform: translate(50%, -50%);
+		}
+		.circle_controls--next {
+			left: auto;
+			right: 0;
+			transform: translateX(-50%, -50%);
+		}
+	}
+	&-list {
+		display: flex;
 	}
 }
 
