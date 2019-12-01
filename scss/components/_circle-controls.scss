@@ -1,62 +1,69 @@
 .circle_controls {
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	box-shadow: 0px 0px 15px rgba($accent-color, 0.5);
-	background-color: $accent-color;
-	border: 0;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	&:focus {
-		outline: 1px solid darken($accent-color, 35%);
-	}
-	&:hover {
-		background-color: darken($accent-color, 5%)
-	}
-	@include flex-center;
-	&--prev::after,
-	&--next::after {
-		content: "";
-		width: 10px;
-		height: 10px;
-		border-left: 2px solid #ffffff;
-		border-bottom: 2px solid #ffffff;
-	}
-	&--prev {
-		&::after {
-			transform: rotate(45deg);
-		}
-	}
-	&--next {
-		&::after {
-			transform: rotate(225deg);
-		}
-	}
-	&--disabled {
-		display: none;
-	}
-	&--play {
-		width: 85px;
-		height: 85px;
-		background-image: url("../assets/images/svg/play-triangle.svg");
-		background-position: center;
-		background-repeat: no-repeat;
-		.video_wrapper & {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			z-index: 2;
-		}
-	}
-	.photo_slider & {
-		position: absolute;
-		top: 50%;
-		&--prev {
-			left: 35px;
-		}
-		&--next {
-			right: 35px;
-		}
-	}
+  width: 55px;
+  height: 55px;
+
+  background-color: $accent-color;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba($accent-color, 0.5);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  @include flex-center;
+  &:focus {
+    outline: 1px solid darken($accent-color, 35%);
+  }
+  &:hover {
+    background-color: darken($accent-color, 5%);
+  }
+  &--prev::after,
+  &--next::after {
+    content: "";
+
+    width: 10px;
+    height: 10px;
+
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+  }
+  &--prev {
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+  &--next {
+    &::after {
+      transform: rotate(225deg);
+    }
+  }
+  &--disabled {
+    display: none;
+  }
+  &--play {
+    width: 85px;
+    height: 85px;
+
+    background-image: url("../assets/images/svg/play-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .video_wrapper & {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+  .photo_slider & {
+    position: absolute;
+    top: 50%;
+    &--prev {
+      left: 35px;
+    }
+    &--next {
+      right: 35px;
+    }
+  }
 }

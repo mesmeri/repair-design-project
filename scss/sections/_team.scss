@@ -1,69 +1,77 @@
 .team {
-	padding: 45px 0;
-	color: $light-text-color;
-	background-image: linear-gradient(to bottom, $dark-bg-color 450px, #fff 350px, #fff 100%);
-	.section_title {
-		color: $light-text-color;
-		&--img {
-			&::after {
-				content: url("../assets/images/svg/team.svg");
-			}
-		}
-	}
-	.text {
-		max-width: 450px;
-	}
-	&_list {
-		margin: 38px 0 53px;
-		&-item {
-			position: relative;
-			&::before {
-				@include flex-center;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 70px;
-				height: 70px;
-				background-color: $accent-color;
-				z-index: 1;
-				box-shadow: 0px 5px 20px rgba($accent-color, 0.5);
-			}
-			&:first-child {
-				&::before {
-					content: url("../assets/images/svg/idea.svg");
-				}
-			}
-			&:nth-child(2) {
-				&::before {
-					content: url("../assets/images/svg/pen.svg");
-				}
-			}
-			&:nth-child(3) {
-				&::before {
-					content: url("../assets/images/svg/bag.svg");
-				}
-			}
-		}
-	}
-	&_about {
-		text-align: center;
-		&::before {
-			content: "";
-			width: 55px;
-			height: 2px;
-			background-color: $accent-color;
-			display: inline-block;
-			margin-bottom: 5px;
-		}
-		.text {
-			color: $dark-text-color;
-			line-height: 1.7;
-			max-width: 520px;
-		}
-	}
+  padding: 45px 0;
+
+  color: $light-text-color;
+
+  background-image: linear-gradient(to bottom, $dark-bg-color 450px, #ffffff 350px, #ffffff 100%);
+  .section_title {
+    color: $light-text-color;
+    &--img {
+      &::after {
+        content: url("../assets/images/svg/team.svg");
+      }
+    }
+  }
+  .text {
+    max-width: 450px;
+  }
+  &_list {
+    margin: 38px 0 53px;
+    &-item {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 70px;
+        height: 70px;
+
+        background-color: $accent-color;
+        box-shadow: 0 5px 20px rgba($accent-color, 0.5);
+
+        @include flex-center;
+      }
+      &:first-child {
+        &::before {
+          content: url("../assets/images/svg/idea.svg");
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          content: url("../assets/images/svg/pen.svg");
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          content: url("../assets/images/svg/bag.svg");
+        }
+      }
+    }
+  }
+  &_about {
+    text-align: center;
+    &::before {
+      content: "";
+
+      display: inline-block;
+      width: 55px;
+      height: 2px;
+      margin-bottom: 5px;
+
+      background-color: $accent-color;
+    }
+    .text {
+      max-width: 520px;
+
+      line-height: 1.7;
+      color: $dark-text-color;
+    }
+  }
 }
 
 .position {
-	color: #959595;
-	font-size: 18px;
-	}
+  font-size: 18px;
+  color: #959595;
+}

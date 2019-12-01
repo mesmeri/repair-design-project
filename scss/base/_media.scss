@@ -1,3 +1,10 @@
+@media screen and (max-width: 1350px) {
+  .footer {
+    .tel_link {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 1250px) {
   .card {
     &-data {
@@ -13,8 +20,7 @@
   }
   .portfolio {
     &-inner {
-      grid-template-areas: 
-      "about about ."
+      grid-template-areas: "about about ."
       "photo photo photo"
       "info info .";
     }
@@ -29,7 +35,7 @@
     .card {
       &-points_wrapper {
         width: 85%;
-        margin-left: 0px;
+        margin-left: 0;
       }
     }
   }
@@ -100,9 +106,11 @@
     font-size: 18px;
   }
   .broadcast {
-    background-image: linear-gradient(to top, #fff 45px, $dark-bg-color 45px, $dark-bg-color 100%);
-    color: $light-text-color;
     padding-bottom: 25px;
+
+    color: $light-text-color;
+
+    background-image: linear-gradient(to top, #ffffff 45px, $dark-bg-color 45px, $dark-bg-color 100%);
     .text {
       margin-bottom: 30px;
     }
@@ -112,10 +120,12 @@
       max-width: 700px;
       margin: 0 auto;
       .input_wrapper {
+        width: 100%;
         margin: 30px 0;
       }
       &-agreement {
         margin: 0 0 30px;
+
         text-align: left;
         .label {
           color: $light-text-color;
@@ -125,9 +135,9 @@
         color: rgba($light-text-color, 0.5);
       }
       .form-input {
-        width: 100%;
-        border-bottom-color: rgba(255, 255, 255, 0.15);
         color: $light-text-color;
+
+        border-bottom-color: rgba(255, 255, 255, 0.15);
         &::-webkit-input-placeholder {
           color: $light-text-color;
         }
@@ -137,7 +147,7 @@
       }
       .form-submit {
         order: 4;
-      } 
+      }
     }
   }
   .types_list,
@@ -151,14 +161,21 @@
         margin-top: 0;
       }
     }
+    .plan_list-item {
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
   }
   .gallery {
     margin-bottom: 0;
   }
   .projects {
-    background: $dark-bg-color;
-    color: $light-text-color;
     padding-bottom: 25px;
+
+    color: $light-text-color;
+
+    background: $dark-bg-color;
     .section_title {
       color: $light-text-color;
     }
@@ -200,9 +217,16 @@
       display: none;
     }
   }
-  .tel_link {
-    color: $light-text-color;
-    border: 0;
+  .header {
+    .tel_link {
+      font-size: 12px;
+      color: $light-text-color;
+
+      border: 0;
+    }
+  }
+  .logo {
+    font-size: 12px;
   }
   .header-btn,
   .scroll {
@@ -218,21 +242,22 @@
   }
   .first_screen {
     &-wrapper {
-    padding: 0;
+      padding: 0;
     }
     .container {
       padding-bottom: 0;
     }
   }
   .offer {
-    padding-left: 18px;
     padding-right: 18px;
+    padding-left: 18px;
   }
   .portfolio {
     padding-top: 36px;
     .colorized_title,
     &_txt {
       margin: 0 auto 30px;
+
       text-align: center;
     }
     &_txt {
@@ -241,8 +266,7 @@
     &-inner {
       grid-column-gap: 0;
       grid-row-gap: 30px;
-      grid-template-areas: 
-      "about about about"
+      grid-template-areas: "about about about"
       "photo photo photo"
       "info info info";
     }
@@ -262,12 +286,9 @@
       display: none;
     }
   }
-  .team {
-    &_about {
-      display: none;
-    }
-  }
-  .reviews {
+  .reviews,
+  .footer,
+  .team_about {
     display: none;
   }
   .contacts {
@@ -276,8 +297,8 @@
   .questions {
     margin-bottom: 10px;
     &_form {
-      max-width: 100%;
       flex-direction: column;
+      max-width: 100%;
       .form-agreement {
         text-align: left;
       }
@@ -305,14 +326,16 @@
     min-height: 60px;
   }
   .page_title {
-    font-size: 23px;
     width: 100%;
+
+    font-size: 23px;
   }
   .offer .btn {
     width: 100%;
     margin-bottom: 25px;
   }
-  .repair_types {
+  .types_list,
+  .plan_list {
     .card {
       width: 100%;
     }

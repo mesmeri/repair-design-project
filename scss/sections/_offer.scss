@@ -1,57 +1,62 @@
 .offer {
-	background: $dark-bg-color url('../assets/images/bgs/offer-bg.jpg') no-repeat center;
-	background-size: cover;
-	position: relative;
-	padding-left: 60px;
-	@include flex (flex-start, center);
-	min-height: 500px;
-	height: calc(100vh - 140px);
-	&::before {
-		content: "";
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
-		position: absolute;
-		z-index: 0;
-		@include absolute;
-	}
-	&-inner {
-		z-index: 1;
-		position: relative;
-	}
-	.btn {
-		&--cta {
-		margin-right: 20px;
-		padding: 18px 42px;	
+  position: relative;
 
-		}
-		&--transparent {
-		padding: 17px 22px;
-		}
-	}
-	.accent {
-		white-space: nowrap;
-	}
+  height: calc(100vh - 140px);
+  min-height: 500px;
+  padding-left: 60px;
 
+  background: $dark-bg-color url("../assets/images/bgs/offer-bg.jpg") no-repeat center;
+  background-size: cover;
+@include flex (flex-start, center);
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+@include absolute;
+  }
+  &-inner {
+    position: relative;
+    z-index: 1;
+  }
+  .btn {
+    &--cta {
+      margin-right: 20px;
+      padding: 18px 42px;
+    }
+    &--transparent {
+      padding: 17px 22px;
+    }
+  }
+  &-town {
+    color: $accent-color;
+    white-space: nowrap;
+  }
 }
-.page_title {
-	font-family: $title-font;
-	font-size: 40px;
-	letter-spacing: 0.06em;
-	width: 85%;
-	max-width: 600px;
-	line-height: 1.32;
-	text-transform: uppercase;
 
-	color: $light-text-color;
+.page_title {
+  width: 85%;
+  max-width: 600px;
+
+  font-size: 40px;
+  line-height: 1.32;
+  font-family: $title-font;
+  color: $light-text-color;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .offer-text {
-	color: $light-text-color;
-	width: 90%;
-	max-width: 450px;
-	font-size: 22px;
-	line-height: 1.36;
-	margin-bottom: 35px;
+  width: 90%;
+  max-width: 450px;
+  margin-bottom: 35px;
+
+  font-size: 22px;
+  line-height: 1.36;
+  color: $light-text-color;
 }
 

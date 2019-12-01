@@ -1,29 +1,30 @@
 .repair_types {
-	padding-bottom: 120px;
-	.section_title {
-		&::after {
-			content: url("../assets/images/svg/types.svg");
-		}
-	}
-	&-text {
-		font-size: 20px;
-		line-height: 1.35;
-		text-align: center;
-		max-width: 55%;
-		margin: 0 auto 39px;
-	}
+  padding-bottom: 120px;
+  .section_title {
+    &::after {
+      content: url("../assets/images/svg/types.svg");
+    }
+  }
+  &-text {
+    max-width: 55%;
+    margin: 0 auto 39px;
+
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+  }
 }
 
 .types {
-	&_list {
-		.card {
-			&-img {
-				filter: brightness(70%);
-			}
-			&-data {
-				padding: 17px 18px;
-			}
-		}
-	}
+  &_list {
+    .card {
+      &-img {
+        filter: brightness(70%);
+      }
+      &-data {
+        padding: 17px 18px;
+      }
+    }
+  }
 }
 

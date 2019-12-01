@@ -1,8 +1,7 @@
 .footer {
-	padding: 60px 0;
-	&-inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  padding: 60px 0;
+  background-color: $dark-bg-color;
+  &-inner {
+    @include flex (space-between, center);
+  }
 }

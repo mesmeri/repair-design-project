@@ -1,64 +1,75 @@
 .card {
-	flex-basis: calc((100% - 60px) / 3);
-	padding-bottom: 30px;
-	&-container {
-		display: flex;
-		justify-content: space-between;
-	}
-	&-img {
-		position: relative;
-	}
-	&-points_wrapper {
-		z-index: 1;
-		background: #ffffff;
-		margin: -127px 31px 0;	
-		padding: 25px 34px 49px;
-		position: relative;
-		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-	}
-	&-data {
-		background-color: $accent-color;
-		color: $light-text-color;
-		font-family: $title-font;
-		padding: 17px 33px;
-		text-transform: uppercase;
-		display: inline-block;
-		position: absolute;
-		bottom: -27px;
-		left: 0;
-		box-shadow: 5px 5px 10px rgba($accent-color, 0.3);
-	}
-	&-title {
-		font-size: 18px;
-		line-height: 1.39;
-		font-family: $title-font;
-		margin-bottom: 10px;
-		color: $dark-text-color;
-	}
-	&-point {
-		margin-left: 20px;
-		list-style-type: disc;
-		font-size: 15px;
-		line-height: 1.67;
-		color: #959595;
-	}
+  flex-basis: calc((100% - 60px) / 3);
+  padding-bottom: 30px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-img {
+    position: relative;
+  }
+  &-points_wrapper {
+    position: relative;
+    z-index: 1;
+
+    margin: -127px 31px 0;
+    padding: 25px 34px 49px;
+
+    background: #ffffff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  }
+  &-data {
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+
+    display: inline-block;
+    padding: 17px 33px;
+
+    font-family: $title-font;
+    color: $light-text-color;
+    text-transform: uppercase;
+
+    background-color: $accent-color;
+    box-shadow: 5px 5px 10px rgba($accent-color, 0.3);
+  }
+  &-title {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    font-family: $title-font;
+    color: $dark-text-color;
+  }
+  &-point {
+    margin-left: 20px;
+
+    list-style-type: disc;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #959595;
+  }
 }
 
 .team {
-	.card {
-		padding: 35px 0 0 35px;
-		color: $dark-text-color;
-		&-points_wrapper {
-			text-align: center;
-			margin-top: -85px;
-		}
-		&-data {
-			color: $light-text-color;
-			padding: 13px;
-			text-align: center;
-			width: 100%;
-			bottom: -15px;
-			font-size: 13px;
-		}
-	}
+  .card {
+    padding: 35px 0 0 35px;
+
+    color: $dark-text-color;
+    &-points_wrapper {
+      margin-top: -85px;
+
+      text-align: center;
+    }
+    &-data {
+      bottom: -15px;
+
+      width: 100%;
+      padding: 13px;
+
+      font-size: 13px;
+      text-align: center;
+      color: $light-text-color;
+    }
+  }
 }
