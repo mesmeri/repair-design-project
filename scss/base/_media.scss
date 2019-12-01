@@ -24,11 +24,12 @@
       display: none;
     }
   }
-  .repair_types {
+  .types_list,
+  .plan_list {
     .card {
       &-points_wrapper {
         width: 85%;
-        margin-left: -1px;
+        margin-left: 0px;
       }
     }
   }
@@ -109,7 +110,8 @@
       } 
     }
   }
-  .types_list {
+  .types_list,
+  .plan_list {
     flex-direction: column;
     align-items: center;
     .card {
@@ -118,6 +120,16 @@
       &:first-child {
         margin-top: 0;
       }
+    }
+  }
+  .gallery {
+    margin-bottom: 0;
+  }
+  .projects {
+    background: $dark-bg-color;
+    color: $light-text-color;
+    .section_title {
+      color: $light-text-color;
     }
   }
 
@@ -131,6 +143,12 @@
     }
   }
   .card {
+    &-title {
+      font-size: 15px;
+    }
+    &-point {
+      font-size: 13px;
+    }
     &-data {
       font-size: 15px;
     }
@@ -212,14 +230,6 @@
     padding-bottom: 25px;
     &-text {
       display: none;
-    }
-  }
-  .card {
-    &-title {
-      font-size: 15px;
-    }
-    &-point {
-      font-size: 13px;
     }
   }
 }

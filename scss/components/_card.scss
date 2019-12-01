@@ -9,7 +9,6 @@
 		position: relative;
 	}
 	&-points_wrapper {
-		position: relative;
 		z-index: 1;
 		background: #ffffff;
 		margin: -127px 31px 0;	
@@ -34,6 +33,7 @@
 		line-height: 1.39;
 		font-family: $title-font;
 		margin-bottom: 10px;
+		color: $dark-text-color;
 	}
 	&-point {
 		margin-left: 20px;

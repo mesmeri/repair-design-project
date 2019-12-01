@@ -10,10 +10,10 @@
 	}	
 }
 .plan {
-	&-list {
+	&_list {
 		align-items: flex-start;
-	}
-	&-item:last-child {
-		padding-bottom: 0;
+		&-item:last-child {
+			padding-bottom: 0;
+		}
 	}
 }
