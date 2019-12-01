@@ -6,7 +6,7 @@
 		border: 0;
 		line-height: 1.33;
 		border-bottom: 1px solid rgba($form-text-color, 0.3);
-		width: 230px;
+		width: 100%;
 		&::-webkit-input-placeholder {
 			font-size: 18px;
 			color: $form-text-color;
@@ -99,6 +99,7 @@
 	flex-wrap: wrap;
 	.input_wrapper {
 		margin-right: 58px;
+		width: 230px;
 	}
 	&-agreement {
 		flex-basis: 100%;
@@ -138,7 +139,6 @@
 	.input_wrapper--tel {
 		width: 45%;
 	}
-	&-question,
 	.input_wrapper--question {
 		width: 100%;
 	}
