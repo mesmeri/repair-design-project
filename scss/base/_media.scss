@@ -74,6 +74,16 @@
       }
     }
   }
+  .reviews {
+    &_list {
+      flex-direction: column;
+      align-items: center;
+      &-item {
+        width: 75%;
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -257,6 +267,9 @@
     &_about {
       display: none;
     }
+  }
+  .reviews {
+    display: none;
   }
 }
 
