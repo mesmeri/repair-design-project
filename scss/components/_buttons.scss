@@ -1,0 +1,30 @@
+.btn {
+  padding: 12px 33px;
+
+  font-size: 13px;
+  line-height: 1;
+  font-family: $accent-font;
+  text-align: center;
+  color: $light-text-color;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  &--cta {
+    padding: 13px 33px;
+
+    background-color: $accent-color;
+    border: none;
+    box-shadow: 0 5px 15px rgba($accent-color, 0.2);
+  }
+  &:hover {
+    background-color: darken($accent-color, 5%);
+  }
+  &:focus {
+    outline: 2px solid darken($accent-color, 45%);
+  }
+}

@@ -1,0 +1,126 @@
+.portfolio {
+  padding: 60px 0 45px;
+  overflow-x: hidden;
+
+  color: $light-text-color;
+
+  background-color: $dark-bg-color;
+  .wrapper--right {
+    display: flex;
+  }
+  &-inner {
+    display: grid;
+
+    grid-gap: 20px;
+    grid-template-areas: "about photo photo"
+    "info photo photo";
+;
+    grid-template-columns: 35% 32.5% 32.5%;
+  }
+  &-about {
+    padding-right: 30px;
+
+    grid-area: about;
+  }
+  .colorized_title {
+    max-width: 255px;
+  }
+  &_txt {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 1.61;
+    text-align: left;
+  }
+}
+
+.info_slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 30px;
+
+  grid-area: info;
+  &-list {
+    padding-top: 15px;
+
+    list-style: none;
+  }
+  &-project_info {
+    display: grid;
+
+    list-style: none;
+
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 1fr 1fr;
+  }
+  &_block {
+    margin-right: 5%;
+    margin-bottom: 37px;
+  }
+  &-data_title {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    font-family: $title-font;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+  &-data {
+    padding-right: 20px;
+
+    font-size: 15px;
+    line-height: 1.33;
+  }
+}
+
+.photo_slider {
+  position: relative;
+
+  grid-area: photo;
+  &-list {
+    display: flex;
+    overflow: hidden;
+
+    list-style: none;
+  }
+  &-item {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 680px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      display: block;
+    }
+  }
+  &-label {
+    display: inline-block;
+    margin-right: 60px;
+    margin-bottom: 45px;
+    padding: 5px;
+
+    font-size: 14px;
+    line-height: 1.36;
+    font-family: $title-font;
+    color: rgba($light-text-color, 0.3);
+    text-transform: uppercase;
+
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &--active {
+      color: $accent-color;
+
+      border-bottom: 1px solid $accent-color;
+    }
+  }
+  input[type="radio"] {
+    display: none;
+  }
+}

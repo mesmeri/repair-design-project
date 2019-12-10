@@ -1,0 +1,98 @@
+.measurement {
+  padding-bottom: 50px;
+
+  color: $light-text-color;
+
+  background-color: $dark-bg-color;
+  .colorized_title {
+    max-width: 300px;
+    margin-bottom: 0;
+    padding-right: 40px;
+    span {
+      display: block;
+      margin-bottom: 18px;
+
+      font-size: 15px;
+      line-height: 1.4;
+      font-family: $accent-font;
+      color: $light-text-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.steps {
+  @include flex (space-between, center);
+  &_desc {
+    width: 27%;
+    &-numbers {
+      margin-bottom: 33px;
+
+      font-size: 18px;
+      line-height: 1.39;
+      font-family: $title-font;
+    }
+    &-title {
+      max-width: 280px;
+
+      font-size: 18px;
+      line-height: 1.28;
+      font-family: $title-font;
+      color: $accent-color;
+      text-transform: uppercase;
+    }
+    &-text {
+      margin-bottom: 20px;
+
+      font-size: 15px;
+      line-height: 1.67;
+    }
+    &-list {
+      list-style: none;
+    }
+  }
+
+  &_demo {
+    width: 65%;
+    &-list {
+      display: grid;
+      justify-content: space-between;
+      margin-bottom: 44px;
+
+      list-style: none;
+
+      grid-row-gap: 35px;
+      grid-template-columns: 130px 125px 120px;
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    &-item {
+      max-width: 140px;
+
+      font-size: 15px;
+      line-height: 18px;
+
+      opacity: 0.4;
+      &--active {
+        opacity: 1;
+      }
+    }
+    &-num {
+      display: block;
+      width: max-content;
+      margin-bottom: 13px;
+
+      font-size: 15px;
+      line-height: 1.4;
+      font-family: $title-font;
+
+      border-bottom: 1px solid $accent-color;
+    }
+    &-photo {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+      img {
+        display: block;
+      }
+    }
+  }
+}

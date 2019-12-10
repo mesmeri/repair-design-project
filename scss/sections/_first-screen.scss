@@ -1,0 +1,99 @@
+.first_screen {
+  position: relative;
+
+  background-color: $dark-bg-color;
+  .container {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  &-wrapper {
+    width: 94.3%;
+    margin-left: 5.7%;
+  }
+}
+
+.instagram_link {
+  position: absolute;
+  top: 50%;
+
+  font-size: 14px;
+  color: $accent-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transform: rotate(90deg);
+
+  transition: all 0.2s ease;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 110%;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: $accent-color;
+
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    color: $light-text-color;
+    &::after {
+      background-color: $light-text-color;
+    }
+  }
+}
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: 40px 48px;
+
+  text-transform: uppercase;
+
+  background-color: $dark-bg-color;
+  &-link {
+    position: relative;
+
+    padding-right: 43px;
+
+    font-size: 14px;
+    color: $light-text-color;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      background: transparent;
+      border: 1.5px solid $accent-color;
+    }
+    &::before {
+      top: -8px;
+      right: 0;
+
+      width: 29px;
+      height: 29px;
+
+      border-radius: 50%;
+    }
+    &::after {
+      top: 3px;
+      right: 11px;
+
+      width: 6px;
+      height: 6px;
+
+      border-top: 0;
+      border-right: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

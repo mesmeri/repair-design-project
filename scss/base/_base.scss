@@ -1,0 +1,139 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: $text-font;
+  color: $dark-text-color;
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  &:focus,
+  &:active {
+    outline: 2px solid darken($accent-color, 35%);
+  }
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+ul,
+p {
+  margin: 0;
+}
+
+.visually_hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  &--centered {
+    width: 86%;
+    margin: 0 7%;
+  }
+  &--left {
+    margin-right: 7%;
+    margin-left: 0;
+  }
+  &--right {
+    margin-right: 0;
+    margin-left: 7%;
+  }
+}
+
+.section {
+  padding: 45px 0;
+}
+
+.section_title,
+.colorized_title {
+  font-family: $title-font;
+}
+
+.section_title {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: $dark-text-color;
+  text-transform: uppercase;
+  &--img {
+    &::after {
+      display: block;
+      width: 114px;
+      height: 28px;
+      margin: 13px auto 31px;
+    }
+  }
+}
+
+.colorized_title {
+  position: relative;
+
+  font-size: 27px;
+  line-height: 1.37;
+  color: $accent-color;
+  text-transform: uppercase;
+  &--line {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -8px;
+      bottom: 19px;
+
+      width: 92px;
+      height: 1px;
+
+      background-color: $accent-color;
+    }
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.text {
+  max-width: 680px;
+  margin: 0 auto;
+
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+}

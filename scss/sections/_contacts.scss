@@ -1,0 +1,71 @@
+.contacts {
+  padding-bottom: 65px;
+
+  background-image: linear-gradient(to bottom, #ffffff 225px, rgba($dark-bg-color, 0.99) 225px, rgba($dark-bg-color, 0.82) 100%),
+  url("../assets/images/bgs/contacts-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.questions {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 35px 0;
+
+  background-color: $dark-bg-color;
+  &-title {
+    margin-bottom: 45px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: $title-font;
+    text-align: center;
+    color: $light-text-color;
+    text-transform: uppercase;
+  }
+}
+.address {
+  max-width: 580px;
+  margin-bottom: 40px;
+
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: $title-font;
+  text-align: center;
+  color: $accent-color;
+  text-transform: uppercase;
+  .tel_link {
+    font-family: inherit;
+    color: inherit;
+
+    border: 0;
+  }
+  &-links {
+    display: block;
+    margin: 25px auto 0;
+  }
+  &-link {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 0 7px;
+
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0 5px 15px rgba($accent-color, 0.3);
+    }
+    &--mail {
+      background: $accent-color url("../assets/images/svg/envelop.svg") no-repeat center;
+    }
+    &--instagram {
+      background: $accent-color url("../assets/images/svg/insta.svg") no-repeat center;
+    }
+  }
+}

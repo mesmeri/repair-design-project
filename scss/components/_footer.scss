@@ -1,0 +1,7 @@
+.footer {
+  padding: 60px 0;
+  background-color: $dark-bg-color;
+  &-inner {
+    @include flex (space-between, center);
+  }
+}
